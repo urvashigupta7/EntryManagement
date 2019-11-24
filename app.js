@@ -2,8 +2,8 @@ const express=require('express');
 const app=express();
 const config=require('dotenv').config({path:'./config/.env'});
 const mongoose=require('mongoose');
-const sendemail=require('./SendMessage/email');
-const sendsms=require('./SendMessage/sms');
+const sendemail=require('./utils/sendmessage/email');
+const sendsms=require('./utils/sendmessage/sms');
 const scheduler=require('./utils/scheduler');
 var bodyparser=require('body-parser');
 mongoose.connect('mongodb+srv://'+process.env.DB_USERNAME+':'+process.env.DB_PASSWORD+'@cluster0-lhmgd.mongodb.net/test?retryWrites=true&w=majority',{ 
