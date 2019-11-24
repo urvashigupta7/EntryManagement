@@ -1,0 +1,32 @@
+body{
+	background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-family: 'Roboto', sans-serif;
+
+}
+h3{
+color:#030d63;
+font-weight:900;
+text-align:center;
+}
+label{
+	color:#030d63;
+}
+
+.jumbotron{
+	width:50%;
+	margin:100px auto;
+	padding:10px;
+	background-color:#ebecef;
+  box-shadow: 0 4px 8px 0 rgba(214,228,241, 0.2), 0 6px 20px 0 rgba(214,228,241, 0.19);
+}
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	.jumbotron{
+		width:90%;
+	}
+}

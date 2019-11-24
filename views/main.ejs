@@ -1,0 +1,53 @@
+<%include partials/header%>
+<div class='container'>
+		<div id='m' class='jumbotron'>			
+			<form action="/" method="POST">
+				<h3><strong>
+				Visitor Details
+				</strong>
+			</h3>
+		<div class="form-group" >
+    <label for="VisitorName">Name</label>
+    <input type="text" class="form-control" id="VisitorName" name="Visitorname" placeholder="Full Name" required>
+  </div>
+  <div class="form-group">
+    <label for="VisitorEmail">Email address</label>
+    <input type="email" class="form-control" id="VisitorEmail" name="Visitoremail" placeholder="Email" required>
+  </div>
+  <div class="form-group">
+    <label for="VisitorMobile">Mobile No</label>
+    <input type="tel" class="form-control" id="VisitorMobile" name="Visitormobile" placeholder="Mobile No" required>
+  </div>
+	<div class="form-group">
+    <label for="VisitorCheckin">Checkin Time</label>
+    <input type="time" class="form-control" id="VisitorCheckin" name="Visitorcheckintime" placeholder="Check In Time" required>
+  </div>
+  <div class="form-group">
+    <label for="VisitorCheckout">Checkout Time</label>
+    <input type="time" class="form-control" id="VisitorCheckout" name="Visitorcheckouttime" placeholder="Check Out Time" required>
+  </div>
+	<h3>
+		<strong>
+	Host Details
+			</strong>
+	</h3>
+	<div class="form-group">
+    <label for="HostName">Name</label>
+    <input type="text" class="form-control" id="HostName" name="Hostname" placeholder="Full Name" required>
+  </div>
+  <div class="form-group">
+    <label for="HostEmail">Email address</label>
+    <input type="email" class="form-control" id="HostEmail" name="Hostemail" placeholder="Email" required>
+  </div>
+  <div class="form-group">
+    <label for="HostMobile">Mobile No</label>
+    <input type="tel" class="form-control" id="HostMobile" name="Hostmobile" placeholder="Mobile No" required>
+				</div>	
+				
+ <button type="submit" class="btn btn-primary btn-block">Submit</button>
+</form>
+		</div>
+		
+		</div>
+<%include partials/footer%>
+	
